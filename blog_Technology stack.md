@@ -214,3 +214,28 @@ python.3x：pip install pymysql
 
 ~~~
 
+## 博客后端服务器
+> 采用Flask,依据工厂模式搭建的项目
+>
+> Flask1.0版本后,由代码编写app.run()语句调整为命令flask run启动
+
+~~~
+Flask V1.1.2
+Flask 是一个微型的 Python 开发的 Web 框架，基于Werkzeug WSGI工具箱和Jinja2 模板引擎
+
+Flask-RESTful V0.3.8
+是一个Flask拓展，提供了REST API的支持
+
+Flask-SQLAlchemy V2.4.3
+是一个支持Flask的ORM拓展，提供SQL工具及对象关系映射
+
+Flask-Script V2.0.6
+flask_script的作用是可以通过命令行的形式来操作flask例如通过一个命令跑一个开发版本的服务器，设置数据库
+
+click V7.1.2
+Click的开发初衷就是使用最少的代码，以一种可组合的方式创建漂亮的命令行接口
+
+Flask-Session
+
+
+~~~

@@ -1,8 +1,11 @@
 from loguru import logger
+from pathlib import Path
 import pymysql
 
+
 # debug < info< warning< error< critical
-logger.add("sql.log", format="{time:YYYY-MM-DD HH:mm} {level} {message}", level="DEBUG", retention="10 days")
+
+logger.add("/home/mrc/New-Blog/back_end/log/sql.log", format="{time:YYYY-MM-DD HH:mm} {level} {message}", level="DEBUG", retention="10 days")
 
 
 class DataBaseHandle:

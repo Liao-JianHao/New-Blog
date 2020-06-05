@@ -1,5 +1,7 @@
 from fdfs_client.client import Fdfs_client
 import os
+
+
 from back_end.utils.sql_curd.blog_mysql import DataBaseHandle
 
 
@@ -10,7 +12,7 @@ class FastDFS:
         self.ip_port = "192.168.47.132:8888/"
 
     def upload_image(self):
-        mysql = DataBaseHandle(host="localhost", user="root", password="liao", database="blog")
+        mysql = DataBaseHandle(host="localhosts", user="root", password="liao", database="blog")
 
         client = Fdfs_client("./client.conf")
         for filename in os.listdir(self.filepath):
