@@ -7,4 +7,4 @@ api = Api(main)
 
 # 路由设置
 from .index.views import *
-api.add_resource(TopImage, "/")
+api.add_resource(TopImage, "/index/image_url")

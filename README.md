@@ -11,6 +11,21 @@
 >
 > 其他技术：FastDFS、Nginx、Mysql(mariaDB)、Redis
 
+#### 启动项目
+
+~~~
+# 后端
+第一步：启动 fastdfs 的 storage 和 trackerd
+sudo /etc/init.d/fdfs_trackerd start
+sudo /etc/init.d/fdfs_storaged start
+
+第二步：启动 nginx
+sudo /usr/local/nginx/sbin/nginx
+
+第三步：启动 flask
+flask run
+~~~
+
 ## 技术点
 
 #### 博客首页动态背景图
