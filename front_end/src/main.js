@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#blog_top',  // html中的选择器
+  el: '#blog',  // html中的选择器
   router,
   components: { App },
   template: '<App/>'

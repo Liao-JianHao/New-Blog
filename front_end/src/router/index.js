@@ -12,6 +12,6 @@ export default new Router({
     //   name: 'HelloWorld',
     //   component: HelloWorld
     // }
-    {path: '/', component: Index}
+    {path: '/', name: "Index", component: Index}
   ]
 })
