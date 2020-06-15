@@ -1,8 +1,6 @@
 <template>
     <div id="blog">
-      <transition name="fade" mode="in-out">
         <router-view ></router-view>
-      </transition>
     </div>
     
 </template>
@@ -16,27 +14,27 @@ export default {
 </script>
 
 <style>
-  .fade-enter {
-  opacity:0;
-}
-.fade-leave{
-  opacity:1;
-}
-.fade-enter-active{
-  transition:opacity .5s;
-}
-.fade-leave-active{
-  opacity:0;
-  transition:opacity .5s;
-}
+  #app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width:100%;
+  height:100%;
+  }
+
+
+  
   *{
     padding: 0;
     margin: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
-  body {
+  html,body {
     line-height: 24px;
     font: 14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
+    user-select:none;  /* 文字禁止选中 */
+    width:100%;
+    height:100%;
   }
   div {
     display: block;
@@ -69,6 +67,20 @@ export default {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+  }
+  
+  a, img{
+    text-decoration: none;
+    border: none;
+  }
+
+  ul{list-style:none}
+  img{vertical-align:top;border:none}
+  .clearf:after,
+  .clearf:before{
+      content:"";
+      display:block;
+      clear:both;
   }
 
 </style>
